@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
+
+body {
+	overflow-x: hidden;
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #000033;
+	color: white;
+}
+
+.offset:before {
+	height: 4rem;
+	margin-top: -4rem;
+	content: "";
+	display: block;
+}
+
+[class*="col-"] {
+	padding: 1rem;
+}
+
+/* Navigation */
+
+.navbar {
+	padding: .7rem 1rem;
+	text-transform: uppercase;
+	font-size: .9rem;
+	font-weight: 700;
+	letter-spacing: .1rem;
+	transition: background-color .5s ease 0s;
+}
+
+.navbar-brand img {
+	height: 5rem;
+	transition: 1s ease 0s;
+}
+
+.svg-inline--fa.fa-w-14 {
+	color: white;
+	font-size: 1.5rem;
+}
+
+.navbar-nav li {
+	padding-right: .8rem;
+}
+
+.navbar-nav .nav-link {
+	color: white;
+	padding-top: .8rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover {
+	color: #cc5200;
+}
+
+.navbar.solid {
+	background: rgba(0, 0, 51, 0.75)!important;
+	transition: background-color 1s ease 0s;
+}
+
+.navbar-brand.solid img {
+	height: 2rem;
+	transition: 1s ease 0s;
+}
+
+/* Home Section */
+
+.home-title {
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 40%;
+	z-index: 1;
+}
+
+.home-title h1 {
+	color: white;
+	font-size: 4.5rem;
+	font-weight: 700;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+}
+
+.home-title h3 {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: 400;
+	text-shadow: .1rem .1rem .5rem black;
+	padding-bottom: 2rem;
+}
+
+/* About Section */
+
+
+/* Experiences Section */
+
+
+/* Projects Section */
+
+
+/* Resume Section */
+
