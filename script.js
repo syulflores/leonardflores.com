@@ -56,3 +56,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* Navbar Transparent to Solid */
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+        document.querySelector('.navbar').classList.add('solid');
+        document.querySelector('.navbar-brand').classList.add('solid');
+    } else {
+        document.querySelector('.navbar').classList.remove('solid');
+        document.querySelector('.navbar-brand').classList.remove('solid');
+    }
+});
