@@ -28,30 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
         animationObserver.observe(element);
     });
 
-
-    /* Navbar links */
-
-    const navbar = document.querySelector('.navbar');
-
-    if (navbar) {
-
-        const updateNavbar = () => {
-            navbar.classList.toggle(
-                'scrolled',
-                window.scrollY > 40
-            );
-        };
-
-        window.addEventListener(
-            'scroll',
-            updateNavbar,
-            { passive: true }
-        );
-
-        // Set the correct state when the page first loads
-        updateNavbar();
-    }
-
 });
 
 
