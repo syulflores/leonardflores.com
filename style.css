@@ -66,15 +66,15 @@ body {
 	transition: 1s ease 0s;
 }
 
-/* Old Home Section */
+/* Landing Section */
 
-.home-background {
+.landing-background {
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
 }
 
-.home-title {
+.landing-title {
 	width: 100%;
 	max-width: 100%;
 	position: absolute;
@@ -83,7 +83,7 @@ body {
 	z-index: 1;
 }
 
-.home-title h1 {
+.landing-title h1 {
 	color: white;
 	font-size: 4.5rem;
 	font-weight: 700;
@@ -91,7 +91,7 @@ body {
 	padding-bottom: 1rem;
 }
 
-.home-title h3 {
+.landing-title h3 {
 	color: white;
 	font-size: 2.5rem;
 	font-weight: 400;
