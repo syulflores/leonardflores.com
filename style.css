@@ -68,6 +68,12 @@ body {
 
 /* Old Home Section */
 
+.home-background {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+}
+
 .home-title {
 	width: 100%;
 	max-width: 100%;
