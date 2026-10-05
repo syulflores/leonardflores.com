@@ -1,35 +1,59 @@
-document.addEventListener('DOMContentLoaded', () => {
+const animationElements = document.querySelectorAll('.fadeInDown, .fadeInUp');
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('.section');
 
-    /* Animations */
 
-    const animationElements = document.querySelectorAll('.fadeInDown, .fadeInUp');
+/* Animations */
 
-    const animationObserver = new IntersectionObserver(
-        (entries, observer) => {
+const animationObserver = new IntersectionObserver(
+    (entries, observer) => {
 
-            entries.forEach(entry => {
+        entries.forEach(entry => {
 
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
 
-                    // Stop observing once the animation has played
-                    observer.unobserve(entry.target);
-                }
+                // Stop observing once the animation has played
+                observer.unobserve(entry.target);
+            }
 
-            });
+        });
 
-        },
-        {
-            threshold: 0.15
-        }
-    );
+    },
+    {
+        threshold: 0.15
+    }
+);
 
-    animationElements.forEach(element => {
-        animationObserver.observe(element);
-    });
-
+animationElements.forEach(element => {
+    animationObserver.observe(element);
 });
 
+/* Scroll Spy */
+
+const navObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach(entry => {
+            if (!entry.isIntersecting) {
+                return;
+            }
+
+            navLinks.forEach(link => {
+                link.classList.toggle(
+                    'active',
+                    link.getAttribute('href') === `#${entry.target.id}`
+                );
+            });
+        });
+    },
+    {
+        rootMargin: '-20% 0px -60% 0px'
+    }
+);
+
+sections.forEach(section => {
+    navObserver.observe(section);
+});
 
 /* Navbar Transparent to Solid */
 
