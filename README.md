@@ -15,6 +15,8 @@ A responsive, single-page portfolio built to showcase my experience as a softwar
 - HTML5
 - CSS3
 - JavaScript
+- Netlify
+- DNS
 
 ## Features
 
@@ -23,11 +25,12 @@ A responsive, single-page portfolio built to showcase my experience as a softwar
 - Skills and experience sections
 - Smooth animations and transitions
 - Mobile-friendly layout
+- Automated deployment via GitHub and Netlify
 
 ## Running Locally
 
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/syulflores/leonardflores.com
 ```
