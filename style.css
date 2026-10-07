@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
 	overflow-x: hidden;
 	font-family: 'Ubuntu', sans-serif;
@@ -23,7 +29,7 @@ body {
 	width: 100%;
 	display: flex;
 	align-items: center;
-	padding: .7rem 2rem .7rem 1rem;
+	padding: .7rem 1rem;
 	text-transform: uppercase;
 	font-size: .9rem;
 	font-weight: 700;
@@ -72,6 +78,7 @@ body {
 
 .landing-background {
 	position: relative;
+	display: flex;
 	width: 100%;
 	min-height: 100vh;
 }
@@ -90,7 +97,7 @@ body {
 	font-size: 4.5rem;
 	font-weight: 700;
 	text-shadow: .1rem .1rem .8rem black;
-	padding-bottom: 1rem;
+    margin: 0 0 1rem;
 }
 
 .landing-title h3 {
@@ -98,7 +105,7 @@ body {
 	font-size: 2.5rem;
 	font-weight: 400;
 	text-shadow: .1rem .1rem .5rem black;
-	padding-bottom: 2rem;
+    margin: 0;
 }
 
 /* About Section */
