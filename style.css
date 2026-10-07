@@ -101,6 +101,12 @@ body {
 
 /* About Section */
 
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 3rem;
+}
 
 /* Experiences Section */
 
@@ -147,6 +153,23 @@ html {
 .fadeInUp.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Responsive breakpoints */
+/* Tablet */
+@media (max-width: 767px) {
+    .about-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 2rem;
+    }
+}
+
+/* Phone */
+@media (max-width: 575px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
 }
 
 /* Reduce motion for users who prefer less animation */
